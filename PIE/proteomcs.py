@@ -274,7 +274,7 @@ def load_graph(file_path):
 
 def list_of_intermediate(graph, list_tot):
     network = set(graph.nodes)
-    protein_inter = network.difference(list_prot)
+    protein_inter = network.difference(list_tot)
     with open("intermediate.txt", "w") as file:
         for proteins in protein_inter:
             file.write(proteins + "\n")
