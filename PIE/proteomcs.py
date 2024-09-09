@@ -269,3 +269,12 @@ def load_graph(file_path):
     except EOFError:
         print(f"Warning: Empty or corrupted file encountered: {file_path}")
         return None
+
+
+
+def list_of_intermediate(graph, list_tot):
+    network = set(graph.nodes)
+    protein_inter = network.difference(list_prot)
+    with open("intermediate.txt", "w") as file:
+        for proteins in protein_inter:
+            file.write(proteins + "\n")
