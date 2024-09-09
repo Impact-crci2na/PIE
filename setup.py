@@ -5,7 +5,6 @@ setup(
     version="1.1",
     packages=find_packages(),  # Recherche automatiquement les packages dans ton répertoire
     install_requires=[
-        "argparse",      # Pour l'analyse des arguments de ligne de commande
         "pickle-mixin",  # Pour la gestion des objets Pickle
         "pyvis",         # Pour la visualisation des graphes
         "networkx",      # Pour la manipulation des graphes
